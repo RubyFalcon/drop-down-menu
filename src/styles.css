@@ -19,7 +19,7 @@
     -webkit-font-smoothing: antialiased;
     height: 100vh;
     font-family: 'Roboto' , sans-serif;
-    background: url("./images/outdoor-dining-1846137.jpg");
+    background-color: aliceblue;
     color: white;
     background-size: cover;
   }
