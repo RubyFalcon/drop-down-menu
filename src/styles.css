@@ -58,147 +58,97 @@
     isolation: isolate;
   }
 
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
 
-  .shadow {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-  }
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  header {
-    border-bottom: 2px solid rgb(233, 163, 34);
-  }
-  header nav{
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    display: flex;
-    gap: 2rem;
-    
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-  }
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
 
-  header button {
-    outline: none;
-    border: none;
-    border-radius: 2em;
-    padding: .5rem 1rem;
-    background-color: rgba(0,0,0,0);
-    color: white;
-    font-size: 1.2rem;
-  }
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
 
-  header button:hover {
-    background-color: rgba(180, 178, 178, 0.2);
-  }
-  .content{
-    height: 60%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 2rem;
-    padding-top: 5rem;
-  }
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  h1 {
-    font-size: 2rem;
-    margin-top: 4rem;
-  }
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
 
-  p{
-    font-size: 1rem;
-  }
+/* Show the dropdown menu on hover */
+.show {
+  display: block;
+}
 
-  a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
-  }
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
 
-  a:hover {
-        color: var(--second-color);
-  }
+/* Style links inside the columns */
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
+/* Add a background color on hover */
+.column a:hover {
+  background-color: #ddd;
+}
 
-  .github {
-    height: 100%;
-    width: 2rem;
-    
-  }
-  
-  .github path {
-    fill: white;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .github:hover path {
-    fill: var(--second-color);
-  }
-
-  .menu-page {
-    background-color: var(--shadow-color);
-    /* color: black; */
-    padding: 3rem;
-    border-radius: 2rem;
-  }
-
-  .menu-page h1 {
-    margin: 0;
-    text-align: center;
-  }
-  #menu-description {
-    margin-bottom: 1rem;
-  }
-  .foods {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .food-card {
-    display: flex;
-    flex-direction: column;
-    gap: .2rem;
-    border-bottom: 1px solid var(--second-color);
-  }
-  @media (max-width: 500px) {
-    .content {
-        margin: 0 auto;
-        width: 23rem;
-        justify-content: center;
-    }
-     h1{
-        font-size: 1.3rem;
-
-     }
-
-     p {
-        width: 70%;
-        font-size: .7rem;
-        text-align: center;
-     }
-     header nav{
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        display: flex;
-        gap: 1rem;
-        
-    
-      }
-      nav button {
-        padding: 0;
-      }
-  }
-
-  @media (max-width: 400px) {
-    .content {
-      width: 20rem;
-      
-    }
-
-    .menu-page{
-      margin-top: 4rem;
-    }
-  }
